@@ -1,0 +1,22 @@
+.card{
+   min-width: 100px;
+    min-height: 380px;
+    border-radius: 5px;
+}
+.info{
+    padding: 20px;
+    
+}
+
+.info p{
+    line-height: 1.8em;
+}
+.info span{
+    opacity: 80%;
+}
+.info h3{
+    margin-bottom: 15px;
+}
+.flag img{
+    width: 100%;
+}

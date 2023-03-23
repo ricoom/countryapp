@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkModebg: hsl(207, 26%, 17%);
+    --darkModenav: hsl(209, 23%, 22%);
+
+}
+
+body {
+    background: var(--darkModebg);
+}
+
+nav {
+    background: var(--darkModenav);
+    padding: 20px;
+    color: #fff;
+}
+
+.container {
+    padding: 110px 60px 0px 90px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    color: #fff;
+    background: var(--darkModenav);
+}
+
+#search {
+    background: var(--darkModenav);
+    position: absolute;
+    left: 50px;
+    width: 300px;
+    outline: none;
+    color: hsl(210, 12%, 57%);
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 40px;
+    border: none;
+    padding: 10px 0px 10px 10px;
+}
+
+@media only screen and (max-width:375px) {
+    #search {
+        width: 200px;
+        left: -10px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .container {
+        position: absolute;
+
+        display: block;
+    }
+}

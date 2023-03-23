@@ -1,0 +1,55 @@
+
+ 
+{
+
+    "country":[{
+
+"name": ["Syrian Arab Republic"],
+    
+ "flags": ["https://flagcdn.com/w320/sy.png"]
+    ,
+    "population": [
+      81,770,900
+    ],
+    "region": [
+      "europe"
+    ],
+    "capital":[
+      "syria"
+    ]
+    },
+{
+
+"name": ["Kenya"],
+    
+
+    "flags": ["https://flagcdn.com/w320/sy.png"]
+    ,
+    "currencies": [
+      {
+        "code": "SYP",
+        "name": "Syrian pound",
+        "symbol": "£"
+      }
+    ],
+    "languages": [
+      {
+        "iso639_1": "ar",
+        "iso639_2": "ara",
+        "name": "Arabic",
+        "nativeName": "العربية"
+      }
+    ]
+    }
+]
+    
+    
+}
+ 
+
+
+
+
+
+
+
