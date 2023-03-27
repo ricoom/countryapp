@@ -17,7 +17,7 @@ export class AllCountriesComponent implements OnInit {
   ngOnInit(): void {
 
     this.service.getAllCountries().subscribe((data:any[])=>{
-       data.forEach(d=>{this.allCountries.push(d.name,d.flags,d,d.currencies)})
+       this.allCountries=data
       console.log(this.allCountries)
     })
   }
