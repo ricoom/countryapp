@@ -1,3 +1,5 @@
 <div class="container">
+    <input type="text" name="" id="search" (keyup)="filterCountry($event)">
+
 <app-card *ngFor="let country of allCountries" [country]="country"></app-card>
 </div>
