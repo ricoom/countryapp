@@ -11,3 +11,16 @@
     border: none;
     padding: 10px 0px 10px 10px;
 }
+.select{
+    background: var(--darkModenav);
+        position: absolute;
+        left: 1000px;
+        width: 300px;
+        outline: none;
+        color: hsl(210, 12%, 57%);
+        font-size: 1em;
+        border-radius: 5px;
+        top: 100px;
+        border: none;
+        padding: 10px 0px 10px 10px;
+}

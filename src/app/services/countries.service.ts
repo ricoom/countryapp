@@ -16,4 +16,8 @@ export class CountriesService {
     
 return this.http.get<any[]>(this.url);
  }
+
+ getCountriesRegion(region:string):Observable<any[]>{
+return this.http.get<any[]>(`https://restcountries.com/v3.1/region/${region}`)
+ }
 }

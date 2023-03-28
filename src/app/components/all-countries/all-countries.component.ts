@@ -10,17 +10,32 @@ import { CountriesService } from 'src/app/services/countries.service';
   styleUrls: ['./all-countries.component.css']
 })
 export class AllCountriesComponent implements OnInit {
-
+  //a list of countries based on their regions
+list:any=[]
+//search input
 newCountry=''
+
+//all countries
  allCountries:any[]= [];
+
   constructor(private service:CountriesService) { }
 
   ngOnInit(): void {
 
     this.service.getAllCountries().subscribe((data:any[])=>{
        this.allCountries=data
+       this.list=data
       console.log(this.allCountries)
     })
+ 
+    
+  }
+
+  filterRegion(region:any){
+   this.allCountries=[];
+this.service.getCountriesRegion(region.target.value).subscribe(data=>{
+this.allCountries=data
+})
   }
 
 filterCountry(country: any){
@@ -33,5 +48,6 @@ filterCountry(country: any){
  })
 
 }
+ 
 
 }
