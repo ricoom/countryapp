@@ -1,13 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-:root {
+body {
+    --darkModebg: hsl(0, 0%, 98%);
+    --darkModenav: hsl(0, 0%, 100%);
+    --textColor: hsl(200, 15%, 8%);
+    --boxshadow: rgb(145, 144, 144);
+
+}
+
+body.dark-theme {
     --darkModebg: hsl(207, 26%, 17%);
     --darkModenav: hsl(209, 23%, 22%);
+    --textColor: hsl(0, 0%, 100%);
+    --boxshadow: rgb(29, 21, 21);
 
 }
 
@@ -18,7 +34,9 @@ body {
 nav {
     background: var(--darkModenav);
     padding: 20px;
-    color: #fff;
+    color: var(--textColor);
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
@@ -26,12 +44,13 @@ nav {
     display: grid;
     gap: 20px;
     grid-column-gap: 40px;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .card {
-    color: #fff;
+    color: var(--textColor);
     background: var(--darkModenav);
+    box-shadow: 1px 5px 15px var(--boxshadow);
 }
 
 
@@ -52,6 +71,7 @@ nav {
         display: block;
     }
 }
+
 @media only screen and (max-width:640px) {
     #search {
         width: 200px;
@@ -65,9 +85,10 @@ nav {
     .container {
         grid-template-columns: 1fr 1fr;
 
-        
+
     }
 }
+
 @media only screen and (max-width:981px) {
     #search {
         width: 200px;

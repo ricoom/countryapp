@@ -1,0 +1,12 @@
+nav{
+        box-shadow: 1px 5px 15px var(--boxshadow);
+}
+.togler {
+    background: var(--darkModebg);
+    color: var(--textColor);
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 1px 5px 15px var(--boxshadow);
+    cursor: pointer;
+}
