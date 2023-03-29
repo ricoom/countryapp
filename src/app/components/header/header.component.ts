@@ -11,5 +11,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  changeTheme(){
+    document.body.classList.toggle('dark-theme');
+  }
 
 }
